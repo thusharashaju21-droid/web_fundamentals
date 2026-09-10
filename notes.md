@@ -111,7 +111,38 @@ id      title      year     language        run_time
 ```
 
 `http_request for adding new movie`
+
+url: localhost:8000/movies/  
+method: post
+
+body   : {  
+    "title": "kgf6",  
+    "year": 2032,  
+    "language": "kannada",  
+    "run_time": 170  
+}
+
 `http_request for list all movie`
+
+url : localhost:8000/movies/  
+method : get    
+
 `http_request for fetching movie detail`
+
+url : localhost:8000/movies/5/  
+method : get  
+
 `http_request for update movie`
+
+url : localhost:8000/movies/5/  
+method : put  
+body {  
+    "title":"kgf5",  
+    "year":2030,  
+    "language":"Kannada"  
+    "run_time:175  
+}
 `http_request for delete movie`
+
+url : localhost:8000/movies/5/  
+method : delete  
