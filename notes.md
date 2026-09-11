@@ -146,3 +146,58 @@ body {
 
 url : localhost:8000/movies/5/  
 method : delete  
+
+
+## HOSPITAL tASK
+Hospital
+
+id    name              place       phone          specialization
+
+1     amrita hospital   kochi       9876543210     cardiology
+2     aster hospital    kochi       9876543211     neurology
+3     jubilee hospital  thrissur    9876543212     dentist
+4     medical trust     kochi       9876543213     pediatrics
+5     appolo hospital   tvm         9876543214     physician
+
+`http_request for adding new hospital`
+url: localhost:8000/hospitals/
+
+method: post
+
+body: {
+    "name": "amrita hospital",
+    "place": "kochi",
+    "phone": "9876543210",
+    "specialization": "cardiology"
+}
+
+`http_request for list all hospital`
+
+url: localhost:8000/hospitals/
+
+method: get
+
+`http_request for fetching hospital detail`
+
+url: localhost:8000/hospitals/5/
+
+method: get
+
+`http_request for update hospital`
+
+url: localhost:8000/hospitals/5/
+
+method: put
+
+body: {
+    "name": "appolo hospital",
+    "place": "kollam",
+    "phone": "9876543299",
+    "specialization": "cardiology"
+}
+
+`http_request for delete hospital`
+
+url: localhost:8000/hospitals/5/
+
+method: delete
